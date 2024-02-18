@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      text-align: center;
+      color: red;
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #countdown {
+      font-size: 125px;
+      margin-top: 50px;
+    }
+  </style>
+  <title>hehehe</title>
+</head>
+<body>
+
+<div id="countdown"></div>
+
+<script>
+  
+  const countDownDate = new Date("jun 6, 2024 08:00:00").getTime();
+
+  const x = setInterval(function() {
+    const now = new Date().getTime();
+
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      "mzal ll bac:" + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var audio = new Audio('img/1.mp3');
+    document.body.addEventListener('mousemove', function() {
+      audio.play().catch(function(error) {
+      });
+});
+});
+</script>
+<p class="stress">drtlk timer bah myhkmkch stress heheahahaha :)
+  <br>*click anywhere* + scroll down
+  </p>
+<div class="container">
+  <div id="hiddenDiv" class="bubbles">
+  <span style="--i:11;"></span>
+  <span style="--i:12;"></span>
+  <span style="--i:24;"></span>
+  <span style="--i:10;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:23;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:20;"></span>
+  <span style="--i:22;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:25;"></span>
+  <span style="--i:21;"></span>
+  <span style="--i:17;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:22;"></span>
+  <span style="--i:20;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:15;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:25;"></span>
+  <span style="--i:11;"></span>
+  <span style="--i:12;"></span>
+  <span style="--i:24;"></span>
+  <span style="--i:10;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:23;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:20;"></span>
+  <span style="--i:22;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:25;"></span>
+  <span style="--i:21;"></span>
+  <span style="--i:17;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:22;"></span>
+  <span style="--i:20;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:15;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:25;"></span>
+  </div>
+</div> 
+
+<img class="geto" src="img\4.jpg" >
+
+<div class="msg">
+  <div class="msg-style">Heeh l bac b9aloch bzf, bda yhkmk stress wla mzl :)?
+    <br> Ig mzl, bsh dok yhkmk whd stress f sbah te3 nhar lwl te3 bac ~~ d9i9a w yroh y3ni 
+    <br> Anyway, just wanted to wish u good luck f BAC n your life
+    <br> Keep going bruh, believe in ya .. GAMBATTE !
+    <br> I'M SURE ha t9dri diri ur dream field nd u'll have a successful life 
+    <br> Shine, our shorty star! ๋ </div>
+</div>
+
+
+</div>
+</div>
+</body>
+</html>

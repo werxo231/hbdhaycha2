@@ -1,0 +1,97 @@
+@font-face {
+    font-family: '123';
+    src: url('img/Ghastly Panic.TTF')
+}
+
+#countdown {
+    font-family: '123', sans-serif;
+    
+}
+.stress {
+    font-size: 15px;
+    color: white;
+}
+.geto {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 40%;
+    height: auto;
+    object-fit: center;
+    z-index: 0;
+    border-radius: 15px;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+    z-index: -1;
+}
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc ;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/ var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #ff2d75 ;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+
+}
+@keyframes animate
+{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translate(-10vh) scale(1);
+    }
+
+}
+.msg {
+    width: 320px;
+    height: 170px;
+    background: black;
+    border : 5px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    float: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    box-shadow: 0px 0px 3px inset #0000004d, 3px 5px 6px #0000004d;
+  }
+
+  .msg-style {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+margin: 0 auto;
+margin-top: 0px;
+margin-top: 0px;
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+color: #ffddea;
+}
+.gato{
+    height: 100px;
+    width: auto;
+    background-image: url('img\2.jpg');
+    background-size: contain;
+    border-radius: 30%;
+    
+
+}
